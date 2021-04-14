@@ -123,12 +123,23 @@ body {
   line-height: 1.2;
   text-decoration: none;
 }
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
 
 /* main section */
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('../images/overlay.jpg');
+  background-position: center;
+  background-size: cover;
+}
 
 .main {
   text-align: center;
@@ -207,6 +218,16 @@ body {
 
   font-size: 14px;
   line-height: 1.7;
+}
+
+.icon-antenna::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/SVG/antenna.svg');
 }
 
 /* our business section */
