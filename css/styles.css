@@ -220,16 +220,6 @@ body {
   line-height: 1.7;
 }
 
-.icon-antenna::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('../images/SVG/antenna.svg');
-}
-
 /* our business section */
 
 .our-business {
