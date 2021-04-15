@@ -220,6 +220,17 @@ body {
   line-height: 1.7;
 }
 
+.icon-tasks {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+}
+
 /* our business section */
 
 .our-business {
