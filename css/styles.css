@@ -129,6 +129,12 @@ body {
   color: var(--accent-color);
 }
 
+.icon-envelope {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* main section */
 
 .overlay {
@@ -166,6 +172,10 @@ body {
 
 .section {
   padding-top: 94px;
+}
+
+.section:last-child {
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -250,6 +260,7 @@ body {
 
 .teams {
   padding-bottom: 94px;
+  background-color: var(--secondary-bg-color);
 }
 
 .team {
@@ -283,6 +294,59 @@ body {
 
   font-size: 16px;
   line-height: 1.2px;
+}
+
+.icon-item {
+  width: 206px;
+  height: 44px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+  margin-left: 32px;
+  display: flex;
+}
+
+.icon-team {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.icon-team:nth-child(4) {
+  margin-right: 0;
+}
+
+.card {
+  padding: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* client */
+
+.icon-client {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  margin-right: 30px;
+}
+
+.icon-client:last-child {
+  margin-right: 0;
+}
+
+.icon-client:hover,
+.icon-client:focus {
+  fill: #2196f3;
+}
+
+.item-client {
+  display: flex;
 }
 
 /* footer */
@@ -325,6 +389,25 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+.title-footer {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.social-links {
+  margin-top: 12px;
+  margin-left: 70px;
 }
 
 /* button */
