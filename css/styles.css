@@ -133,6 +133,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 30px;
+}
+
+.envelope {
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.envelope:hover,
+.envelope:focus {
+  fill: #2196f3;
+}
+
+.smartphone {
+  fill: #757575;
+}
+
+.smartphone:hover,
+.smartphone:focus {
+  fill: #2196f3;
 }
 
 /* main section */
@@ -296,13 +316,17 @@ body {
   line-height: 1.2px;
 }
 
+.team-link {
+  display: flex;
+  text-decoration: none;
+}
+
 .icon-item {
   width: 206px;
   height: 44px;
   margin-right: 32px;
   margin-bottom: 30px;
   margin-left: 32px;
-  display: flex;
 }
 
 .icon-team {
@@ -316,6 +340,42 @@ body {
   margin-right: 0;
 }
 
+.instagram {
+  fill: #ffffff;
+}
+
+.instagram:hover,
+.instagram:focus {
+  fill: #2196f3;
+}
+
+.twitter {
+  fill: #ffffff;
+}
+
+.twitter:hover,
+.twitter:focus {
+  fill: #2196f3;
+}
+
+.facebook {
+  fill: #ffffff;
+}
+
+.facebook:hover,
+.facebook:focus {
+  fill: #2196f3;
+}
+
+.linkedin {
+  fill: #ffffff;
+}
+
+.linkedin:hover,
+.linkedin:focus {
+  fill: #2196f3;
+}
+
 .card {
   padding: 0;
   background-color: #ffffff;
@@ -324,6 +384,11 @@ body {
 }
 
 /* client */
+
+.client-link {
+  text-decoration: none;
+  display: flex;
+}
 
 .icon-client {
   width: 170px;
@@ -340,13 +405,67 @@ body {
   margin-right: 0;
 }
 
+.item-client {
+  display: flex;
+}
+
 .icon-client:hover,
 .icon-client:focus {
+  border: 1px solid #2196f3;
+}
+
+.group-one {
+  fill: #afb1b8;
+}
+
+.group-one:hover,
+.group-one:focus {
   fill: #2196f3;
 }
 
-.item-client {
-  display: flex;
+.group-two {
+  fill: #afb1b8;
+}
+
+.group-two:hover,
+.group-two:focus {
+  fill: #2196f3;
+}
+
+.group-three {
+  fill: #afb1b8;
+}
+
+.group-three:hover,
+.group-three:focus {
+  fill: #2196f3;
+}
+
+.group-four {
+  fill: #afb1b8;
+}
+
+.group-four:hover,
+.group-four:focus {
+  fill: #2196f3;
+}
+
+.group-five {
+  fill: #afb1b8;
+}
+
+.group-five:hover,
+.group-five:focus {
+  fill: #2196f3;
+}
+
+.group-six {
+  fill: #afb1b8;
+}
+
+.group-six:hover,
+.group-six:focus {
+  fill: #2196f3;
 }
 
 /* footer */
@@ -445,6 +564,7 @@ body {
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* стили для li */
@@ -481,6 +601,19 @@ body {
   justify-content: center;
 }
 
+.progects-link {
+  text-decoration: none;
+}
+
+.progects-card {
+  border: 1px solid #eeeeee;
+}
+
+.progects-card:hover,
+.progects-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .progects .item {
   width: 370px;
   margin-right: 30px;
@@ -507,9 +640,7 @@ body {
 }
 
 .names {
-  border: 1px solid #eeeeee;
-
-  min-width: 322px;
+  min-width: 370px;
   padding: 20px 24px;
 }
 
@@ -521,6 +652,7 @@ body {
 }
 
 .progects .text {
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
   margin-top: 4px;
