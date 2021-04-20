@@ -143,7 +143,7 @@ body {
 
 .envelope:hover,
 .envelope:focus {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 
 .smartphone {
@@ -165,6 +165,8 @@ body {
   background-image: url('../images/overlay.jpg');
   background-position: center;
   background-size: cover;
+  background-image: rgba(47, 48, 58, 0.4);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main {
@@ -192,9 +194,6 @@ body {
 
 .section {
   padding-top: 94px;
-}
-
-.section:last-child {
   padding-bottom: 94px;
 }
 
@@ -210,6 +209,10 @@ body {
 }
 
 /* tasks */
+
+.task {
+  padding-bottom: 0;
+}
 
 .tasks {
   display: flex;
@@ -279,14 +282,12 @@ body {
 /* team */
 
 .teams {
-  padding-bottom: 94px;
   background-color: var(--secondary-bg-color);
 }
 
 .team {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
 }
 
 .team .item {
@@ -318,15 +319,9 @@ body {
 
 .team-link {
   display: flex;
-  text-decoration: none;
-}
+  justify-content: center;
 
-.icon-item {
-  width: 206px;
-  height: 44px;
-  margin-right: 32px;
-  margin-bottom: 30px;
-  margin-left: 32px;
+  text-decoration: none;
 }
 
 .icon-team {
@@ -334,6 +329,7 @@ body {
   width: 44px;
   height: 44px;
   margin-right: 10px;
+  margin-bottom: 30px;
 }
 
 .icon-team:nth-child(4) {
@@ -513,6 +509,7 @@ body {
 .title-footer {
   margin-top: 0;
   margin-bottom: 20px;
+
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 14px;
@@ -529,13 +526,34 @@ body {
   margin-left: 70px;
 }
 
+.instagram-footer,
+.twitter-footer,
+.facebook-footer,
+.linkedin-footer {
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.instagram-footer:hover,
+.instagram-footer:focus,
+.twitter-footer:hover,
+.twitter-footer:focus,
+.facebook-footer:hover,
+.facebook-footer:focus,
+.linkedin-footer:hover,
+.linkedin-footer:focus {
+  fill: var(--accent-color);
+}
+
+.social-footer {
+  display: flex;
+}
+
 /* button */
 
 .button {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
   cursor: pointer;
-  border-radius: 4px;
 }
 
 .button.primary {
@@ -569,6 +587,7 @@ body {
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 /* стили для li */
