@@ -56,15 +56,14 @@ body {
   font-size: 26px;
   line-height: 1.2;
 }
-.logo-span:hover,
-.logo-span:focus {
+.logo:hover .logo-span,
+.logo:focus .logo-span {
   color: var(--accent-color);
 }
 
 /* main-nav */
 
 .nav {
-  margin-right: 331px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -112,10 +111,6 @@ body {
   display: flex;
 }
 
-.auth-nav .item + .item {
-  margin-left: 50px;
-}
-
 .auth-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -133,23 +128,24 @@ body {
   fill: #757575;
 }
 
-.icons-list {
-  display: inline-block;
+.icons-list .icons-header-link {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.icons-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 305px;
+.icons-header:not(:last-child) {
   margin-right: 30px;
+  margin-left: 305px;
 }
 
 .icons-header-link:hover .icons-svg,
 .icons-header-link:focus .icons-svg {
   fill: var(--accent-color);
+}
+
+.icons-svg {
+  margin-right: 10px;
 }
 
 /* main section */
@@ -159,10 +155,10 @@ body {
   height: 600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url('../images/overlay.jpg');
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/overlay.jpg');
   background-position: center;
   background-size: cover;
-  background-color: rgba(47, 48, 58, 0.4);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -255,9 +251,11 @@ body {
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+
   align-items: center;
   justify-content: center;
   display: flex;
+
   margin-bottom: 30px;
 }
 
@@ -368,6 +366,7 @@ body {
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
+
   align-items: center;
   justify-content: center;
   display: flex;
@@ -409,8 +408,8 @@ body {
   font-size: 26px;
   line-height: 1.2;
 }
-.logo-footer:hover,
-.logo-footer:focus {
+.logo:hover .logo-footer,
+.logo:focus .logo-footer {
   color: var(--accent-color);
 }
 
@@ -506,6 +505,7 @@ body {
   line-height: 1.9;
   align-items: center;
   text-align: center;
+
   padding: 10px 32px;
 }
 
@@ -517,6 +517,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+
   padding: 6px 22px;
 }
 
